@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bcd.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-16T12:15:58" hostname="andre-300E5M-300E5L" time="0.068">
+  <properties/>
+  <testcase name="appHasAGreeting()" classname="bcd.AppTest" time="0.068"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
