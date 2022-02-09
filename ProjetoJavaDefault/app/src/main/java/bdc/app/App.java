@@ -3,19 +3,37 @@
  */
 package bdc.app;
 
-import bdc.list.LinkedList;
-
-import static bdc.utilities.StringUtils.join;
-import static bdc.utilities.StringUtils.split;
-import static bdc.app.MessageUtils.getMessage;
-
-import org.apache.commons.text.WordUtils;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.lang.String;
 
 public class App {
+
     public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+        
+        System.out.println("Compilou");
+        String dbUri = "jdbc:mysql://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
+
+        String dbMysql = "jdbc:mysql://ampto.sj.i";
+
+        String query = "SELECT * FROM Pessoa";
+
+        //try (
+              //  Connection conexao = DriverManager.getConnection(dbUri);
+          //      PreparedStatement statement = conexao.prepareStatement(query);
+            //    ResultSet resultSet = statement.executeQuery();
+
+            //) {
+               
+              //  while(resultSet.next()){
+                //    System.out.println("ID:" + resultSet.getInt("idPessoa"));
+                //}
+
+
+        //}catch (Exception e){
+        ///    e.printStackTrace();
+        //}
     }
 }

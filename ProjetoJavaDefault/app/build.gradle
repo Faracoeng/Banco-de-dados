@@ -11,6 +11,8 @@ plugins {
 dependencies {
     implementation 'org.apache.commons:commons-text'
     implementation project(':utilities')
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+
 }
 
 application {
