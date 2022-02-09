@@ -29,7 +29,7 @@ public class App {
               //  Connection conexao = DriverManager.getConnection(dbUri);
 
               //Pegar a conexão da classe Conexao
-              Connection conexao = Conexao.getConexoa();
+              Connection conexao = Conexao.getConexao();
           //      PreparedStatement statement = conexao.prepareStatement(query);
             //    ResultSet resultSet = statement.executeQuery();
 
