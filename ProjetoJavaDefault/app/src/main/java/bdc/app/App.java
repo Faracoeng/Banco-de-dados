@@ -7,6 +7,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import db.Conexao;
+
 import java.lang.String;
 
 public class App {
@@ -16,26 +19,29 @@ public class App {
         System.out.println("Compilou");
         
         //String dbUri = "jdbc:mysql://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
-        String dbUri = "jdbc:sqlite://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
+        //String dbUri = "jdbc:sqlite://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
 
-        String dbMysql = "jdbc:mysql://ampto.sj.i";
+       // String dbMysql = "jdbc:mysql://ampto.sj.i";
 
-        String query = "SELECT * FROM Pessoa";
+        //String query = "SELECT * FROM Pessoa";
 
-        //try (
+        try (
               //  Connection conexao = DriverManager.getConnection(dbUri);
+
+              //Pegar a conexão da classe Conexao
+              Connection conexao = Conexao.getConexoa();
           //      PreparedStatement statement = conexao.prepareStatement(query);
             //    ResultSet resultSet = statement.executeQuery();
 
-            //) {
+            ) {
                
               //  while(resultSet.next()){
                 //    System.out.println("ID:" + resultSet.getInt("idPessoa"));
                 //}
 
 
-        //}catch (Exception e){
-        ///    e.printStackTrace();
-        //}
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
