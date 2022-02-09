@@ -14,7 +14,9 @@ public class App {
     public static void main(String[] args) {
         
         System.out.println("Compilou");
-        String dbUri = "jdbc:mysql://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
+        
+        //String dbUri = "jdbc:mysql://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
+        String dbUri = "jdbc:sqlite://ampto.sj.ifsc.edu.br:33006/lab01emerson?user=emerson&password=bcd1234";
 
         String dbMysql = "jdbc:mysql://ampto.sj.i";
 
