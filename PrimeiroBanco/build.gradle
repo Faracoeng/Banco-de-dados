@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "6.5.1"
+}
+
+group 'engtelecom.bcd'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+    implementation 'org.xerial:sqlite-jdbc:3.39.4.0'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.31'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
